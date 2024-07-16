@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <h1>Markdown Text to HTML Example</h1>
+            <textarea class="form-control mb-5" style="min-height: 300px;" placeholder="Enter your markdown text here" #textarea (keyup)="update(textarea.value)"></textarea>
+            
+            <markdown
+                [data]="text"
+                [disableSanitizer]="true">
+            </markdown>
+        </div>
+    </div>
+</div>
